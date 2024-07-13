@@ -73,7 +73,7 @@ const SignUpMail = () => {
     if (!newErrors.email && !newErrors.username && !newErrors.password) {
       try {
         const response = await axios.post(
-          "http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-up",
+          "https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-up",
           { ...formData, phonenumber }
         );
         console.log(response); // Handle successful response

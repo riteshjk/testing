@@ -39,7 +39,7 @@ const Login = () => {
     dispatch(signInStart());
     try {
       const response = await fetch(
-        "http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-in",
+        "https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-in",
         {
           method: "POST",
           headers: {
@@ -69,7 +69,7 @@ const Login = () => {
     dispatch(signInStart());
     try {
       const response = await fetch(
-        "http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-in-mobilenumber",
+        "https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-in-mobilenumber",
         {
           method: "POST",
           headers: {

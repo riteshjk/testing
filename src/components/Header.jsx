@@ -25,7 +25,7 @@ const Header = () => {
 
   const handleSignOut = async() =>{
     try {
-      const res = await fetch("http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-out", {
+      const res = await fetch("https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/sign-out", {
         method: "POST",
       });
       const data = await res.json();
