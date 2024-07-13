@@ -17,7 +17,7 @@ export const sendOtp = createAsyncThunk(
   async (userData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/send-otp",
+        "https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/send-otp",
         userData
       );
       toast.success("OTP sent successfully!");
@@ -34,7 +34,7 @@ export const verifyOtp = createAsyncThunk(
   async (otpData, { rejectWithValue }) => {
     try {
       const response = await axios.post(
-        "http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/verify-otp",
+        "https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/verify-otp",
         otpData
       );
       toast.success("OTP verified successfully!");
@@ -62,7 +62,7 @@ export const updateProfile = createAsyncThunk(
       }
 
       const response = await axios.post(
-        'http://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/build-profile',
+        'https://tbuddy-beta-env.eba-mbgj5krz.ap-south-1.elasticbeanstalk.com/api/v1/users/build-profile',
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       );
